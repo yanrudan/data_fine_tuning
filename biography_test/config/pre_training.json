@@ -1,0 +1,42 @@
+{
+  "wandb": {
+    "project": "biography_qa_pretrain",
+    "entity": "hpml-hkbu",
+    "name": "Qa_0.8_test",
+    "phase": "pre_training"
+  },
+  "shared": {
+    "model_path": "/home/tangzhenheng/models/gpt2/gpt2-small",
+    "biography_data_path": "./data/biography/single_gpt2.json",
+    "qa_data_path": "./data/qa/all.json"
+  },
+  "pretrain": {
+    "person_index_info_list": [
+      {
+        "start": 0,
+        "end": 10000
+      }
+    ],
+    "qa_index_info_list": [
+      {
+        "start": 0,
+        "end": 5000
+      }
+    ],
+    "test_qa_index_info_list": [
+        {
+        "start": 5000,
+        "end": 10000
+        }
+    ],
+    "previous_output_dir": "",
+    "output_dir": "./model/gpt2/single",
+    "max_steps": 100,
+    "warmup_steps": 20,
+    "model_max_length": 512,
+    "per_device_train_batch_size": 8,
+    "first_token_accuracy_calculation_strategy": "EPOCH",
+    "first_token_accuracy_calculation_interval": 10,
+    "QAr": 0.8
+  }
+}

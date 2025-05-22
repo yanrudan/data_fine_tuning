@@ -1,0 +1,42 @@
+# 操作系统自动生成的文件
+.DS_Store          # macOS 系统文件
+Thumbs.db          # Windows 缩略图缓存
+desktop.ini        # Windows 系统文件
+
+# 编辑器/IDE 临时文件
+.idea/             # JetBrains IDE（如 PyCharm）
+.vscode/           # VS Code 配置
+*.swp              # Vim 临时文件
+*.swo
+
+# 依赖目录
+node_modules/      # Node.js 依赖
+venv/              # Python 虚拟环境
+__pycache__/       # Python 缓存文件
+*.py[cod]
+
+# 日志文件
+*.log
+logs/
+
+# 编译生成的文件
+*.exe
+*.dll
+*.so
+*.out
+*.class
+
+# 敏感信息（如 API 密钥、密码）
+.env               # 环境变量文件
+*.key
+*.pem
+*.cert
+
+# 构建/打包产物
+dist/
+build/
+*.egg-info/
+
+model/
+wandb/
+data/
